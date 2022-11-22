@@ -1,0 +1,8 @@
+<ul class="names" >
+   <li 
+      class="names__name" 
+      *ngFor="let name of names"
+   > 
+      <span *ngIf="searchInputValue === '' || name.toLowerCase().includes(searchInputValue.toLowerCase())">{{ name }}</span>
+   </li>
+</ul>
